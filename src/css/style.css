@@ -2,6 +2,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #707070;
     background-color: #1c1c1c;
+    padding: 5px 0;
 
 }
 
@@ -89,7 +90,7 @@ body {
     margin-bottom: 10px;
     max-width: 60%;
     color: #c8c8c8;
-    white-space: normal;
+    word-wrap: break-word;
 }
 
 .messenger__you-message {
@@ -121,4 +122,54 @@ body {
 
 .messenger__new-message-textarea:focus {
     outline: none;
+}
+
+/* Форма авторизации */
+
+.authorization-form {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    background-color: #220c1d;
+    border: 1px solid #535353;
+    border-radius: 5px;
+}
+
+.authorization-form__textarea {
+    display: block;
+    margin: 15px;
+    background: linear-gradient(30deg, #27002f, #532248);
+    border: 1px solid #535353;
+    border-radius: 5px;
+    text-align: center;
+    color: #c8c8c8;
+    height: 40px;
+}
+
+.authorization-form__textarea:focus {
+    outline: none;
+}
+
+.authorization-form__textarea::placeholder {
+    color: #c8c8c8;
+}
+
+.autorization-form__button {
+    display: block;
+    margin: 15px auto;
+    padding: 0 15px;
+    background: linear-gradient(30deg, #27002f, #532248);
+    height: 40px;
+    border: 1px solid #535353;
+    border-radius: 20px;
+    color: #c1c1c1;
+}
+
+.autorization-form__button:hover {
+    cursor: pointer;
+    background: linear-gradient(30deg, #3f004c, #6e2d60);
+}
+
+.invisible {
+    display: none;
 }
