@@ -72,7 +72,6 @@ body {
     overflow: auto;
     padding: 15px;
     height: 600px;
-
 }
 
 .messenger__messages::-webkit-scrollbar {
@@ -93,7 +92,7 @@ body {
     word-wrap: break-word;
 }
 
-.messenger__you-message {
+.messenger__your-message {
     align-self: flex-end;
     background: linear-gradient(210deg, #27002f, #532248);
 }
@@ -101,6 +100,15 @@ body {
 .messenger__other-message {
     background: linear-gradient(30deg, #27002f, #532248);
 }
+
+.messenger__message-author {
+    margin-bottom: 10px;
+}
+
+.messenger__message-content {
+    
+}
+
 
 /* Форма отправки сообщений */
 
