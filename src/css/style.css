@@ -16,8 +16,7 @@ body {
 /* Стили списка пользователей */
 
 .messenger-users {
-    width: 200px;
-    max-width: 300px;
+    width: 300px;
     border: 1px solid #000000;
     border-radius: 8px;
     border-color: #535353;
@@ -105,11 +104,6 @@ body {
     margin-bottom: 10px;
 }
 
-.messenger__message-content {
-    
-}
-
-
 /* Форма отправки сообщений */
 
 .messenger__new-message-form {
@@ -180,4 +174,46 @@ body {
 
 .invisible {
     display: none;
+}
+
+/* исчезновение placeholder */
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
