@@ -3,7 +3,7 @@ import parceDate from './parceDate';
 export default class Messenger {
   constructor() {
     this.username = null;
-    this.webSocket = new WebSocket('ws://localhost:7070/');
+    this.webSocket = new WebSocket('ws://ahj-25-sse-ws-backend.herokuapp.com/');
     this.addListenersToPage = this.addListenersToPage.bind(this);
     this.sendMessage = this.sendMessage.bind(this);
     this.messenger = document.querySelector('.messenger-wrapper');
@@ -26,6 +26,8 @@ export default class Messenger {
       this.name = evt.target[0].value;
       this.sendMessage('connect');
       evt.target.classList.add('invisible');
+      const messenger = document.querySelector('.messenger-wrapper');
+      messenger.classList.remove('invisible');
     });
 
     const messageForm = document.querySelector('.messenger__new-message-form');
