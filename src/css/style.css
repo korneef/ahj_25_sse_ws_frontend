@@ -131,7 +131,7 @@ body {
 .authorization-form {
     position: absolute;
     top: 30%;
-    left: calc(50%-125px);
+    left: calc(50% - 125px);
     width: 250px;
     background-color: #220c1d;
     border: 1px solid #535353;
