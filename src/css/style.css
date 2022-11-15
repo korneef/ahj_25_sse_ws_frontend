@@ -140,7 +140,7 @@ body {
 
 .authorization-form__textarea {
     display: block;
-    margin: 15px;
+    margin: 15px auto;
     background: linear-gradient(30deg, #27002f, #532248);
     border: 1px solid #535353;
     border-radius: 5px;
